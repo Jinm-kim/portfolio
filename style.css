@@ -25,6 +25,8 @@
     --weight-regular: 400;
     /* Size */
     --size-border-radius: 4px;
+    /* Annimation */
+    --annimation-duration: 300ms;
 }
 
 /* Universal tags */
@@ -148,4 +150,132 @@ p {
     border: 2px solid var(--color-light-white);
     border-radius: var(--size-border-radius);
     color: var(--color-white);
+}
+
+/* Section common */
+.section {
+    padding: 50px;
+    text-align: center;
+    margin: auto;
+} 
+
+.section__container {
+    max-width: 1200px; /* 데스크탑에서 편하게 볼 수 있는 너비*/ 
+    margin: auto;
+}
+
+/* About */
+.about__mojors {
+    display: flex;
+    justify-content: space-around;
+    margin: 80px 0;
+}
+
+.about__me {
+    color: var(--color-light-grey);
+}
+
+.major__icon {
+    width: 170px;
+    height: 170px;
+    line-height: 170px; /* 높이 조절 시 유용 */
+    font-size: 70px;
+    margin: auto;
+    color: var(--color-dodger-blue);
+    border: 1px solid var(--color-dodger-blue);
+    border-radius: 50%;
+    margin-bottom: 16px;
+}
+
+.major__icon i {
+    transition: all var(--annimation-duration);
+}
+
+.major__icon:hover {
+    color: purple;
+    transform: rotate(-30deg) scale(1);
+}
+
+.major__title,
+.major__description {
+    color: var(--color-dark-grey);
+}
+
+.job {
+    display: flex;
+    align-items: center;
+}
+
+.job__description {
+    margin: 0 16px;
+    text-align: left;
+}
+
+.job__name,
+.job__work {
+    color: var(--color-light-grey);
+}
+
+.job__name {
+    font-size: var(--font-small);
+}
+
+.job__work {
+    font-size: var(--font-micro);
+}
+
+.job__logo {
+    width: 100px;
+    height: 70px;
+}
+
+/* Skill */
+
+#skills {
+    background-color: var(--color-yellow);
+}
+
+.skillset {
+    display: flex;
+    background-color: var(--color-light-grey);
+    color: var(--color-white);
+    margin: 20px 0;
+}
+
+.skillset__title {
+    color: white;
+}
+
+.skillset__left {
+    flex-basis: 60%;
+    background-color: var(--color-dark-grey);
+    padding: 20px 40px;
+}
+
+.skill__description {
+    display: flex;
+    justify-content: space-between;
+}
+
+.skill__bar {
+    width: 100%;
+    height: 3px;
+    background-color: var(--color-grey);
+}
+
+.skill__value {
+    height: 3px;
+    background-color: var(--color-orange);
+}
+
+.skill {
+    margin-bottom: 30px;
+}
+
+.skillset__right {
+    flex-basis: 40%;
+}
+
+.tools__list {
+    padding: 30px;
 }
