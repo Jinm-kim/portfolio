@@ -92,13 +92,15 @@ p {
 #navbar {
     position: fixed;
     width: 100%;
+    height: 80px;
     display: flex;
     justify-content: space-between;
     background-color: transparent;
     align-items: center;
     color: var(--color-white);
-    padding: 16px;
+    padding: 5px;
     transition: all var(--annimation-duration) ease-in-out;
+    z-index: 1; /* navbar 맨 위로 지정 */
 }
 
 #navbar.navbar--dark {
