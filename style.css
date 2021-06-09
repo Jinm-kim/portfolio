@@ -412,3 +412,29 @@ p {
 .speech-bobble__name {
     color: var(--color-dark-grey);
 }
+
+/* Contact */
+
+#contact {
+    background-color: var(--color-sky-blue);
+}
+
+.contact__title,
+.contact__email,
+.contact__rights {
+    color: var(--color-white);
+}
+
+.contact__title {
+    margin: 30px 0;
+}
+
+.contact__links {
+    font-size: var(--font-large);
+    margin: 24px 0;
+}
+
+.contact__links i:hover {
+    transform: scale(1.1);
+    color: var(--color-yellow);
+}
