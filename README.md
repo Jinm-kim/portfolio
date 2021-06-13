@@ -1,2 +1,2 @@
 # portfolio
- Ellie's portfolio
+ Jinm's portfolio
